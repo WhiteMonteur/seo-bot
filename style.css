@@ -297,7 +297,7 @@ h2{
 
 .modules{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1px;
   background: var(--border-soft);
   border: 1px solid var(--border-soft);
@@ -307,7 +307,7 @@ h2{
 
 .module-card{
   background: var(--bg);
-  padding: 26px 22px;
+  padding: 22px 18px;
   transition: background .15s ease;
 }
 
@@ -315,7 +315,7 @@ h2{
 
 .flag{
   font-family: var(--font-mono);
-  font-size: 12.5px;
+  font-size: 11.5px;
   color: var(--violet);
   margin-bottom: 12px;
   display:block;
@@ -323,15 +323,15 @@ h2{
 
 .module-card h3{
   font-family: var(--font-display);
-  font-size: 16.5px;
+  font-size: 15px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .module-card p{
-  font-size: 13.5px;
+  font-size: 12.5px;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 /* activation / payment */
@@ -533,6 +533,10 @@ footer{
 .back-link:hover{ color: var(--amber); }
 
 /* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 960px){
+  .modules{ grid-template-columns: repeat(3, 1fr); }
+}
 
 @media (max-width: 860px){
   .hero-grid{ grid-template-columns: 1fr; }
