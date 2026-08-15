@@ -3,12 +3,12 @@
 const TERMINAL_LINES = [
   { type: 'prompt', text: '$ seo-bot init --server="ton-serveur"' },
   { type: 'out',    text: '> Connexion à l’API Discord... OK' },
-  { type: 'out',    text: '> Chargement des modules SEO... OK' },
-  { type: 'prompt', text: '$ seo-bot track --domain="example.com"' },
-  { type: 'ok',     text: '> Position #14 → #9 (7 derniers jours)' },
-  { type: 'out',    text: '> 3 nouveaux backlinks détectés' },
-  { type: 'prompt', text: '$ seo-bot alert --channel="#seo-alerts"' },
-  { type: 'ok',     text: '> Alertes activées' },
+  { type: 'out',    text: '> Chargement des modules... OK' },
+  { type: 'prompt', text: '$ seo-bot antiraid --enable' },
+  { type: 'ok',     text: '> Protection anti-raid activée' },
+  { type: 'out',    text: '> 12 comptes suspects bloqués (7 derniers jours)' },
+  { type: 'prompt', text: '$ seo-bot logs --channel="#logs"' },
+  { type: 'ok',     text: '> Journalisation activée' },
 ];
 
 function typeTerminal(){
